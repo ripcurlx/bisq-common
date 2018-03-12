@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>network.bisq</groupId>
     <artifactId>bisq-common</artifactId>
-    <version>-SNAPSHOT</version>
+    <version>-SNAPSHOT-add-vote-feature</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
