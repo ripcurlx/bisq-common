@@ -344,7 +344,8 @@ message StoragePayload {
 
         MailboxStoragePayload mailbox_storage_payload = 6;
         OfferPayload offer_payload = 7;
-        ProposalPayload proposal_payload = 8;
+        CompensationRequestPayload compensation_request_payload = 8; // @deprecated but keep to not break old version
+        ProposalPayload proposal_payload = 9;
     }
 }
 
@@ -968,7 +969,8 @@ message PersistableEnvelope {
         BsqBlockChain bsq_block_chain = 14;
 
         PersistableNetworkPayloadList persistable_network_payload_list = 15;
-        ProposalList proposal_list = 16;
+        CompensationRequestList compensation_request_list = 16; // deprecated. Not used anymore.
+        ProposalList proposal_list = 17;
     }
 }
 
@@ -1038,6 +1040,10 @@ message PaymentAccountList {
 
 message ProposalList {
     repeated Proposal proposal = 1;
+}
+
+// deprecated not used anymore
+message CompensationRequestList {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -1326,6 +1332,10 @@ message BsqBlockChain {
 
 message VoteItemsList {
     repeated int32 vote_item = 1; // deprecated. Not used anymore. (dummy data)
+}
+
+// deprecated not used anymore
+message CompensationRequestPayload {
 }
 
 message ProposalPayload {
