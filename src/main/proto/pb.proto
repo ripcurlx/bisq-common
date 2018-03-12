@@ -344,7 +344,7 @@ message StoragePayload {
 
         MailboxStoragePayload mailbox_storage_payload = 6;
         OfferPayload offer_payload = 7;
-        CompensationRequestPayload compensation_request_payload = 8; // @deprecated but keep to not break old version
+        CompensationRequestPayload compensation_request_payload = 8; // deprecated. Not used anymore.
         ProposalPayload proposal_payload = 9;
     }
 }
@@ -1330,8 +1330,8 @@ message BsqBlockChain {
     Tx genesis_tx = 7;
 }
 
+// deprecated. Not used anymore. (dummy data)
 message VoteItemsList {
-    repeated int32 vote_item = 1; // deprecated. Not used anymore. (dummy data)
 }
 
 message ProposalPayload {
