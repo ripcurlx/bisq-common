@@ -1334,10 +1334,6 @@ message VoteItemsList {
     repeated int32 vote_item = 1; // deprecated. Not used anymore. (dummy data)
 }
 
-// deprecated not used anymore
-message CompensationRequestPayload {
-}
-
 message ProposalPayload {
     uint32 version = 1; // https://stackoverflow.com/questions/17594881/store-a-single-byte-in-a-protobuf-message
     int64 creation_date = 2;
